@@ -15,3 +15,19 @@ def divide(x, y):
         return "Error: Cannot divide by zero"
     else:
         return x / y
+
+# Define a function to get user input
+def get_input():
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    return (num1, num2)
+
+# Define a function to display the menu and get user choice
+def get_choice():
+    print("Choose an operation:")
+    print("1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+    choice = input("Enter choice (1/2/3/4): ")
+    return choice
